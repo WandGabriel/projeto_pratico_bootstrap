@@ -1,0 +1,9 @@
+@media screen and (max-width: 640px){
+    .text-information {
+        text-align: center;
+    }
+    .row {
+        width: 100%;
+    }
+}
+
