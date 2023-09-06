@@ -1,9 +1,4 @@
-@media screen and (max-width: 640px){
-    .text-information {
-        text-align: center;
-    }
-    .row {
-        width: 100%;
-    }
+* {
+    background-color: #adb5bd;
 }
 

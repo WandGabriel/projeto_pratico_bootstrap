@@ -9,26 +9,29 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
+        <div class="navbar navbar-expand-md">
             <div class="nav-brand">
-                <img src="images/logos/logo-nba.jpg" width="250" height="100" alt="">
+                <img src="images/logos/logo-nba.jpg" width="250" height="100" alt="Logo da NBA">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarHeader">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>                
-            <nav class="navbar-nav" id="navbarHeader">
-                <ul class="nav nav-pills">
+            <nav class="navbar-nav navbar-collapse collapse justify-content-end" id="navbarHeader">
+                <ul class="nav navbar-nav nav-pills">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Times</a>
+                        <a class="nav-link" href="#times">Times</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Últimas informações</a>
+                        <a class="nav-link" href="#ultimas-informacoes">Últimas informações</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="container">   
+    <main class="container">   
         <div class="row mb-4">
             <div id="carouselSlide" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -50,16 +53,14 @@
                 </button>
             </div>
         </div>     
-        <div class="row">
+        <div class="row times">
             <div class="col-9 container-fluid mt-4">
                 <div class="row">
                     <h1 class="h3 pb-3 text-center">TIMES</h1>
                     <div class="container">
                         <div class="row text-center">
                             <div class="col-md-6 col-lg-4">
-                                <a href="#">
                                     <img src="images/logos/atlanta-hawks.jpg" alt="Logo do Atlanta Hawks">
-                                </a>
                                 <p>Atlanta Hawks</p>
                             </div>
                             <div class="col-md-6 col-lg-4">
@@ -182,7 +183,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 mt-4">
+            <div class="col-lg-3 mt-4 ultimas-informacoes">
                 <h1 class="h4 text-center mb-4">ÚLTIMAS INFORMAÇÕES</h1>
                 <div class="container container-fluid">
                     <div class="card mb-2">
@@ -209,7 +210,12 @@
                 </div>
             </div>
         </div>        
-    </div>
+    </main>
+    <footer>
+        <div class="container text-center">
+            <b> &copy;  Todos os direitos reservados</b>
+        </div>
+    </footer>
     <script src="lib/_js_bootstrap.bundle.min.js"></script>
 </body>
 </html>
